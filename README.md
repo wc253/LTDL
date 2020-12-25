@@ -1,6 +1,11 @@
 # A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising
 All matlab codes of the paper TSP2020-A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising.
 
+# Datasets
+CAVE from [here](http://www.cs.columbia.edu/CAVE/databases/multispectral/)<br>
+ICVL from [here](http://icvl.cs.bgu.ac.il/hyperspectral/). We downsample the ICVL datasets by ```msi=msi(1:2:size(msi,1),1:2:size(msi,2), :)```.<br>
+Jasper Ridge from [here](https://rslab.ut.ac.ir/data)<br>
+
 # Folder structure
 ```shell
 Demo_DL_syn.m                    : Detect road on the denoised jasperRidge HSIs via different methods (Fig. 7, 8). Please run it where we provide the pre‐computing denoising results and you can get the results in Fig. 7 and Fig. 8.
@@ -36,10 +41,7 @@ result\
 ├──────pre_synthetic_data_test_once
 ├──────pre_watercolors_MSI
 ```
-# Datasets
-CAVE from [here](http://www.cs.columbia.edu/CAVE/databases/multispectral/)<br>
-ICVL from [here](http://icvl.cs.bgu.ac.il/hyperspectral/). We downsample the ICVL datasets by ```msi=msi(1:2:size(msi,1),1:2:size(msi,2), :)```.<br>
-Jasper Ridge from [here](https://rslab.ut.ac.ir/data)<br>
+
 # Citation
 X. Gong, W. Chen and J. Chen, "A Low-Rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising," in IEEE Transactions on Signal Processing, vol. 68, pp. 1168-1180, 2020, doi: 10.1109/TSP.2020.2971441.
 
