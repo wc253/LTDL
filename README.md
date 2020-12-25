@@ -34,7 +34,7 @@ Demo_target_detection.m          : Test the proposed LTDL's dictionary learning 
 ```
 # Datasets
 CAVE from [here](http://www.cs.columbia.edu/CAVE/databases/multispectral/)<br>
-ICVL from [here](http://icvl.cs.bgu.ac.il/hyperspectral/). We downsample the ICVL datasets by ```python msi=msi(1:2:size(msi,1),1:2:size(msi,2), :)```.<br>
+ICVL from [here](http://icvl.cs.bgu.ac.il/hyperspectral/). We downsample the ICVL datasets by ```msi=msi(1:2:size(msi,1),1:2:size(msi,2), :)```.<br>
 Jasper Ridge from [here](https://rslab.ut.ac.ir/data)<br>
 # Citation
 X. Gong, W. Chen and J. Chen, "A Low-Rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising," in IEEE Transactions on Signal Processing, vol. 68, pp. 1168-1180, 2020, doi: 10.1109/TSP.2020.2971441.
