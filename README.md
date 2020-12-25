@@ -1,5 +1,5 @@
 # A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising
-All matlab codes of all experiments from the paper TSP2020-A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising.
+All matlab codes of the paper TSP2020-A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising.
 
 # Folder structure
 ```shell
@@ -8,7 +8,7 @@ data\                              :
 ├────jasperRidge_10band.mat        :
 ├────watercolors_MSI.mat           :
 lib\                              
-├───LTDL_utilize\           : functions of the LTDL method<br>
+├───LTDL_utilize\           : functions of the proposed LTDL method
 ├───hyperspectralToolbox\   : HSI detection toolbox https://github.com/isaacgerg/matlabHyperspectralToolbox
 ├───tensor_toolbox\         : tensor processing toolbox http://www.sandia.gov/~tgkolda/TensorToolbox/index‐2.5.html
 ├───tensorlab\              : tensor processing toolbox https://www.tensorlab.net/versions.html#3.0
@@ -35,3 +35,5 @@ Demo_target_detection.m          : Test the proposed LTDL's dictionary learning 
 
 # Citation
 X. Gong, W. Chen and J. Chen, "A Low-Rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising," in IEEE Transactions on Signal Processing, vol. 68, pp. 1168-1180, 2020, doi: 10.1109/TSP.2020.2971441.
+
+We would like to thank those researchers for making their codes and datasets publicly available. If you have any question, please feel free to contact me via: xiaogong@bjtu.edu.cn
