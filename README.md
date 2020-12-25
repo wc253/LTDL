@@ -32,7 +32,7 @@ lib\
 ├───myPlotROC.m                  : plot ROC curves
 ├───tight_subplot.m              : create "subplot" axes with adjustable gaps and margins
 result\ 
-├──────pre_jasperRidge_10band           : functions of the proposed LTDL method
+├──────pre_jasperRidge_10band    : the pre-computing results of 'Demo_denoise_v2' for MSI detection
 ├──────pre_synthetic_data_test_once
 ├──────pre_watercolors_MSI
 ```
