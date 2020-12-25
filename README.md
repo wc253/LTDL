@@ -32,7 +32,10 @@ Demo_denoise_ge.m                : The demo on "watercolors" HSI with generated 
 Demo_denoise_v2.m                : Denoise on the test ICVL HSIs and the jasperRidge HSI. Set “exp=0” to compare model driven methods with deep learning method (Table IV) and set 'exp=1' to denoise for target detection. To run the deep learning method in this demo, you should first download and install 'MatConvNet'. Please see 'Readme.txt' in the path 'lib\compete_methods\HSI‐DeNet1'.
 Demo_target_detection.m          : Test the proposed LTDL's dictionary learning performance with synthetic data (Fig. 4). You can see the pre‐computed results in the road of 'result\pre_synthetic_data_test_once'.
 ```
-
+# Datasets
+CAVE from [here](http://www.cs.columbia.edu/CAVE/databases/multispectral/)
+ICVL from [here](http://icvl.cs.bgu.ac.il/hyperspectral/)
+Jasper Ridge from [here](https://rslab.ut.ac.ir/data)
 # Citation
 X. Gong, W. Chen and J. Chen, "A Low-Rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising," in IEEE Transactions on Signal Processing, vol. 68, pp. 1168-1180, 2020, doi: 10.1109/TSP.2020.2971441.
 
