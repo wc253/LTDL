@@ -3,6 +3,10 @@ All matlab codes of the paper TSP2020-A Low-rank Tensor Dictionary Learning Meth
 
 # Folder structure
 ```shell
+Demo_DL_syn.m                    : Detect road on the denoised jasperRidge HSIs via different methods (Fig. 7, 8). Please run it where we provide the pre‐computing denoising results and you can get the results in Fig. 7 and Fig. 8.
+Demo_denoise_ge.m                : The demo on "watercolors" HSI with generated noise. It needs to take a lot of time so you can test all methods on a cropped HSI. Change noise level by modifying variables "sigma_ratio" in your experiments.
+Demo_denoise_v2.m                : Denoise on the test ICVL HSIs and the jasperRidge HSI. Set “exp=0” to compare model driven methods with deep learning method (Table IV) and set 'exp=1' to denoise for target detection. To run the deep learning method in this demo, you should first download and install 'MatConvNet'. Please see 'Readme.txt' in the path 'lib\compete_methods\HSI‐DeNet1'.
+Demo_target_detection.m          : Test the proposed LTDL's dictionary learning performance with synthetic data (Fig. 4). You can see the pre‐computed results in the road of 'result\pre_synthetic_data_test_once'.
 data\                              :
 ├────HSIDnet_data.mat              :the test ICVL HSI of HSI-DeNet
 ├────jasperRidge_10band.mat        :
@@ -27,10 +31,6 @@ lib\
 ├───PARAFAC.m                    : http://gr.xjtu.edu.cn/web/dymeng
 ├───myPlotROC.m                  : plot ROC curves
 ├───tight_subplot.m              : create "subplot" axes with adjustable gaps and margins
-Demo_DL_syn.m                    : Detect road on the denoised jasperRidge HSIs via different methods (Fig. 7, 8). Please run it where we provide the pre‐computing denoising results and you can get the results in Fig. 7 and Fig. 8.
-Demo_denoise_ge.m                : The demo on "watercolors" HSI with generated noise. It needs to take a lot of time so you can test all methods on a cropped HSI. Change noise level by modifying variables "sigma_ratio" in your experiments.
-Demo_denoise_v2.m                : Denoise on the test ICVL HSIs and the jasperRidge HSI. Set “exp=0” to compare model driven methods with deep learning method (Table IV) and set 'exp=1' to denoise for target detection. To run the deep learning method in this demo, you should first download and install 'MatConvNet'. Please see 'Readme.txt' in the path 'lib\compete_methods\HSI‐DeNet1'.
-Demo_target_detection.m          : Test the proposed LTDL's dictionary learning performance with synthetic data (Fig. 4). You can see the pre‐computed results in the road of 'result\pre_synthetic_data_test_once'.
 ```
 # Datasets
 CAVE from [here](http://www.cs.columbia.edu/CAVE/databases/multispectral/)<br>
