@@ -8,10 +8,10 @@ Jasper Ridge from [here](https://rslab.ut.ac.ir/data)<br>
 
 # Folder structure
 ```shell
-Demo_DL_syn.m                    : Detect road on the denoised jasperRidge HSIs via different methods (Fig. 7, 8). Please run it where we provide the pre‐computing denoising results and you can get the results in Fig. 7 and Fig. 8.
-Demo_denoise_ge.m                : The demo on "watercolors" HSI with generated noise. It needs to take a lot of time so you can test all methods on a cropped HSI. Change noise level by modifying variables "sigma_ratio" in your experiments.
-Demo_denoise_v2.m                : Denoise on the test ICVL HSIs and the jasperRidge HSI. Set “exp=0” to compare model driven methods with deep learning method (Table IV) and set 'exp=1' to denoise for target detection. To run the deep learning method in this demo, you should first download and install 'MatConvNet'. Please see 'Readme.txt' in the path 'lib\compete_methods\HSI‐DeNet1'.
-Demo_target_detection.m          : Test the proposed LTDL's dictionary learning performance with synthetic data (Fig. 4). You can see the pre‐computed results in the road of 'result\pre_synthetic_data_test_once'.
+Demo_DL_syn.m                    : Detect the object 'road' on denoised jasperRidge HSIs via different methods (Fig. 7, 8). Please run it where we provide the pre‐computing denoising results and you can get the results in Fig. 7 and Fig. 8.
+Demo_denoise_ge.m                : Denoise the  CAVE-'watercolors' HSI with generated noise. It needs to take a lot of time so you can test all methods on a cropped HSI. Change noise level by modifying variables "sigma_ratio" in your experiments.
+Demo_denoise_v2.m                : Denoise the test ICVL HSIs and the jasperRidge HSI. Set “exp=0” to compare model driven methods with deep learning method (Table IV) and set 'exp=1' to denoise for target detection. To run the deep learning method in this demo, you should first download and install 'MatConvNet'. Please see 'Readme.txt' in the path 'lib\compete_methods\HSI‐DeNet1'.
+Demo_target_detection.m          : Evaluate the dictionary learning performance of LTDL with synthetic data (Fig. 4). You can see the pre‐computed results in the road of 'result\pre_synthetic_data_test_once'.
 data\
 ├────HSIDnet_data.mat              :the test ICVL HSI of HSI-DeNet
 ├────jasperRidge_10band.mat        :the jasperRidge2 HSI for detection
