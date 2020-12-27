@@ -1,4 +1,4 @@
-# A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising
+# Code of A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising
 All matlab codes of the paper TSP2020-A Low-rank Tensor Dictionary Learning Method for Hyperspectral Image Denoising.<br>
 ![pre_watercolors_MSI](https://github.com/wc253/LTDL/raw/master/result/pre_watercolors_MSI.png)
 # Datasets
