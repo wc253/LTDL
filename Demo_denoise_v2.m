@@ -17,11 +17,10 @@ EN_KBRreg   = 1;
 EN_LLRT     = 1;
 EN_MStSVD   = 1;
 EN_LTDL     = 1; % the proposed method
-EN_HSIDnet   = 1;
 methodname ={'Nosiy MSI','KSVD','BM3D','LRTA','PARAFAC','BM4D','TDL','KBRreg','LLRT','MStSVD','LTDL','HSIDnet'};
 
 %% Select the experiment
-exp = 0; % 0-compared with deep learning method   1-denoise for target detection
+exp = 1; % 0-compared with deep learning method   1-denoise for target detection
 if exp ==0
     sigma_ratio = 20/255; % Gaussian noise with 20/255 or 10/255
     dataName = ['data\HSIDnet_data.mat'];
@@ -34,6 +33,7 @@ elseif exp ==1
     dataName = ['data\jasperRidge_10band.mat'];
     load(dataName);  % load noisy jasperRidge2 for detection
     sigma_ratio = 0.01; % Gaussian noise
+    EN_HSIDnet   = 0;
     road = ['result\re_jasperRidge'];  % save the recovered MSIs for detection
     iscleanmsi = 0;
 end
